@@ -1,10 +1,11 @@
+
 let photo, mask;
 
 var xoffset = 155;
 var yoffset = 245;
 function preload() {
-  photo = loadImage('emoji.jpg');
-  mask = loadImage('m2.png');
+  photo = loadImage('images/emoji.jpg');
+  mask = loadImage('images/m2.png');
    // imgMask = loadImage('assets/mask.png');
 
 }
