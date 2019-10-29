@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+body {
+
+   /* margin: 0px;
+  padding: 0px; */
+
+  /* display: flex; */
+  /* justify-content: center; */
+  /* background: url(../images/bc.jpg) no-repeat;
+
+ background-position: center;
+ background-size: cover; */
+
+   background: black;
+
+}
+
+.theatre {
+  border: inset #000 10px;
+  margin: auto;
+  /* transform: translateY(0%); */
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+}
+.video{
+
+margin: 50px auto;
+width: 300px;
+height: 200px;
+
+}
+
+.curtain-left,
+.curtain-right {
+  position: absolute;
+  top: -300px;
+  bottom: -30px;
+  width: 61%;
+  background-color: rgb(255, 0, 10);
+  background-image: linear-gradient(
+    90deg,
+    rgba(204, 0, 10, 1) 30%,
+    transparent 50%,
+    rgba(204, 0, 10, 1) 80%,
+    transparent 100%
+  );
+  background-size: 90px;
+}
+
+.curtain-left {
+  left: -10%;
+  filter: drop-shadow(1px 6px 6px black);
+  box-shadow: -2px 0px 6px rgba(255, 255, 255, 0.4) inset,
+    0px 320px 40px rgba(0, 0, 0, 0.5) inset;
+}
+
+.curtain-right {
+  right: -10%;
+  filter: drop-shadow(1px 6px 6px black);
+  box-shadow: 2px 0px 6px rgba(255, 255, 255, 0.4) inset,
+    -0px 320px 40px rgba(0, 0, 0, 0.5) inset;
+}
+
+.theatre:hover .curtain-left {
+  transform: translateX(-100%) rotate(15deg);
+  transition: all 3s ease;
+  transform-origin: 50% bottom;
+}
+
+.theatre:hover .curtain-right {
+  transform: translateX(100%) rotate(-15deg);
+  transition: all 3s ease;
+  transform-origin: 50% bottom;
+}
+
+
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns:  repeat(7, 200px);
+  grid-template-rows: repeat( 4, 170px);
+  /* background-color: #fff; */
+  /* color: #444; */
+}
+
+.box {
+  /* border: 1px solid #444; */
+  padding: 10px;
+  font-size: 150%;
+}
+
+
+
+.a {
+  grid-column: 7 / 8;
+  grid-row: 1 / 2;
+  background: url(../images/c1.jpeg) no-repeat;
+  background-position: center;
+ background-size: 100%;
+}
+
+.b{
+  grid-column: 2 / 6;
+  grid-row: 1 / 4;
+  /* object-fit: cover; */
+  justify-self: center;
+  align-items: center;
+
+}

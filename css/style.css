@@ -1,0 +1,93 @@
+* {
+  font-family: Myriad Pro;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  outline: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+
+body {
+  background: rgba(18, 18, 18, 1);
+}
+/*color: #2aa5dd;*/
+
+#top-header {
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 1200px;
+  height: 45px;
+  background: rgba(0,0,0,.8);
+}
+
+.nav {
+  color: white;
+  list-style: none;
+  text-align: center;
+  padding: 5px 0 5px 0;
+}
+
+.nav > li {
+  display: inline-block;
+  margin-top: 11.25px;
+}
+
+.nav li:nth-of-type(1) {
+  left: 33%;
+  margin-right: 90px;
+}
+.nav li:nth-of-type(2) {
+  left: 33%;
+  margin-right: 90px;
+}
+.nav li:nth-of-type(3) {
+  left: 33%;
+  margin-right: 90px;
+}
+
+.nav li:nth-of-type(4) {
+  left: 33%;
+  margin-right: ;
+}
+
+.nav > li > a {
+  text-decoration: none;
+  color: #fff;
+  transition-duration: .75ms;
+}
+
+.nav > li > a:hover {
+  opacity: .75;
+  transition-duration: 200ms;
+}
+
+.banner-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% + 100px);
+    background: url(../images/name.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.banner-background:hover{
+  /* filter: blur(3px); */
+
+/* z-index: -1; */
+  background: url(../images/conan.jpg);
+  transform: scale(.7);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+
+
+}

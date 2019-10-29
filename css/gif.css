@@ -1,0 +1,50 @@
+/* body{
+  background-color: white;
+} */
+
+body {
+  margin: 30px auto;
+  max-width: 1000px;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  padding: 30px 20px;
+  text-align: center;
+  text-decoration: none;
+  background: linear-gradient(0.25turn,black,white,black);
+
+/* background: black; */
+/* background: linear-gradient(45deg, white , black); */
+
+
+}
+
+
+.header {
+        padding: 0px;
+        text-align: center;
+        font-size: 22px;
+        color: black;
+    }
+
+    .portfolio-item {
+    margin-top: 60px;
+    padding: 40px;
+    background-color: #f7f7f7;
+    }
+    img {
+    display: block;
+    margin: 0px auto;
+    }
+
+.gallery{
+  position: relative;
+  display: inline-block;
+}
+
+.gallery img{
+  border: solid 7px white;
+  box-shadow: 0 0 5px rgba（0，0，0，0.3);
+  cursor: crosshair;
+  /* transition: filter 0.3s linear, transform 0.3 linear; */
+}
