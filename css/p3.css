@@ -57,6 +57,8 @@ height: 200px;
   filter: drop-shadow(1px 6px 6px black);
   box-shadow: -2px 0px 6px rgba(255, 255, 255, 0.4) inset,
     0px 320px 40px rgba(0, 0, 0, 0.5) inset;
+    transition: all 5s ease;
+
 }
 
 .curtain-right {
@@ -64,7 +66,10 @@ height: 200px;
   filter: drop-shadow(1px 6px 6px black);
   box-shadow: 2px 0px 6px rgba(255, 255, 255, 0.4) inset,
     -0px 320px 40px rgba(0, 0, 0, 0.5) inset;
+    transition: all 5s ease;
+
 }
+
 
 .theatre:hover .curtain-left {
   transform: translateX(-100%) rotate(15deg);
@@ -77,7 +82,19 @@ height: 200px;
   transition: all 3s ease;
   transform-origin: 50% bottom;
 }
+/*
+.curtain-trigger {
+  visibility: hidden;
+  position: absolute;
+} */
 
+/* .curtain-trigger:checked ~ .left-curtain {
+  transform: translateX(calc(-100% + 2em));
+}
+
+.curtain-trigger:checked ~ .right-curtain {
+  transform: translateX(calc(100% - 2em));
+} */
 
 .wrapper {
   display: grid;

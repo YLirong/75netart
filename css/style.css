@@ -10,7 +10,7 @@
 }
 
 body {
-  background: rgba(18, 18, 18, 1);
+  /* background: rgba(18, 18, 18, 1); */
 }
 /*color: #2aa5dd;*/
 
@@ -23,6 +23,7 @@ body {
   min-width: 1200px;
   height: 45px;
   background: rgba(0,0,0,.8);
+
 }
 
 .nav {
